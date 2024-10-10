@@ -23,6 +23,11 @@ jobs:
       - name: Build the app
         run: npm run build
 
+      - name: Configure Git user
+        run: |
+          git config --global user.email "bakim.boadu@georgebrown.ca"
+          git config --global user.name "boadu-comp"
+
       - name: Run test
         run: npm run test
 
